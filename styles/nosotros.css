@@ -1,0 +1,193 @@
+body {
+    min-height: 1000px;
+    max-width: 100%;
+    padding: 150px;
+    background-color: papayawhip; 
+}
+
+.content-1{
+    display: flex;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.content-i{
+	justify-content: center; width: 100%;
+}
+
+.content-d{
+	justify-content: center; 
+    width: 100%;
+    padding:30px;
+}
+
+
+
+/* Testimonial CSS Code Start */
+
+.box1{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 250px;
+    width: 100%;
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    color: white;
+    opacity: 0.95;
+    
+    font-size: 2em;
+    text-align: center;
+    line-height: 250px;
+}
+/* background */
+.carousel-bg {
+    background-color: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  /* quote */
+  .quote-image {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    padding-top: 60px;
+    width: 80px;
+  }
+  /* text-style */
+  .testimonial-style .testimonial-caption-style {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 24px;
+    color: #354052;
+    line-height: 30px;
+    bottom: 40%;
+    text-shadow: none;
+    top: 10%;
+  }
+  .testimonial-style .testimonial-authors {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 20px;
+    color: #354052;
+    line-height: 30px;
+    margin-top: 40px;
+  }
+  /* carousel-height-control */
+  .testimonial-style .carousel-inner > .item {
+    padding-top: auto;
+    padding-bottom: auto;
+    height: 380px;
+  }
+  /* carousel-left-right-control */
+  .testimonial-style .carousel-control.left {
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+  }
+  .testimonial-style .carousel-control.right {
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+  }
+  .testimonial-style .carousel-control {
+    color: #354052;
+  }
+  .testimonial-style .carousel-control:hover {
+    color: #354052;
+    text-decoration: none;
+    transition: background-color 1s ease;
+  }
+  /* indicators */
+  .testimonial-style .carousel-indicators .active {
+    background-color: #fff;
+    width: 14px;
+    height: 14px;
+    transition: background 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+  .testimonial-style .carousel-indicators li {
+    border: 2px solid #354052;
+    background-color: #354052;
+  }
+  /* Textimonial CSS Code End */
+.heading {
+    text-align: center;
+    color: #454343;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    z-index: 999;
+}
+.white-heading{
+    color: #ffffff;
+}
+.heading:after {
+    content: ' ';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    height: 40px;
+    width: 180px;
+    border-radius: 4px;
+    transform: translateX(-50%);
+    background: url(img/heading-line.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.white-heading:after {
+    background: url(https://i.ibb.co/d7tSD1R/heading-line-white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.heading span {
+    font-size: 18px;
+    display: block;
+    font-weight: 500;
+}
+.white-heading span {
+    color: #ffffff;
+}
+/*-----Testimonial-------*/
+
+
+/* ------testimonial  close-------*/
+
+footer {
+    padding: 2rem 0;
+    background-color: #212529;
+  }
+  
+  ul.social-buttons {
+    margin-bottom: 0;
+  }
+  
+  ul.social-buttons li a {
+    font-size: 20px;
+    line-height: 40px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #fff;
+    border-radius: 100%;
+    outline: 0;
+  }
+  
+  footer .quick-links {
+    font-size: 90%;
+    line-height: 40px;
+    margin-bottom: 0;
+    text-transform: none;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  .copyright {
+    color: white;
+  }
+  
+  .fa-ellipsis-h {
+    color: white;
+    padding: 2rem 0;
+  }

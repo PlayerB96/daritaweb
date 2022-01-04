@@ -1,0 +1,125 @@
+body {
+    min-height: 100vh;
+    max-width: 99.20%;
+    padding: 150px;
+    background-color: papayawhip; 
+}
+.bg-video-wrap video {
+    min-width: 100.8%;
+    min-height: 100%;
+    display: block;
+    z-index: 1;
+}
+
+.bg-video-wrap h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+    max-width: 600px;
+    width: 100%;
+    height: 50px;
+}
+
+.services h1 {
+    font-size: 36px;
+    padding-top: 28px;
+    text-align: center;
+}
+.services h2 {
+    color: #6f4459;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#content-1 {
+    padding:30px;
+    background: linear-gradient(90deg, rgba(127,202,38,1) 10%, rgba(9,100,121,1) 50%, rgba(62,82,158,1) 100%);
+}
+#content-1 img{
+    margin-right:190px;
+}
+#content-1 div{
+    margin-left:60px;
+}
+#content-2 {
+    padding:30px;
+    background: linear-gradient(90deg, rgba(62,82,158,1) 0%, rgba(9,100,121,1) 50%, rgba(127,202,38,1) 100%);
+
+}
+#content-2 img{
+    margin-left:120px;
+}
+
+#content-2 div{
+    margin-left:60px;
+}
+
+.customers{
+    padding-bottom: 40px;
+}
+.customers h1{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 40px ;
+    padding-bottom: 40px;
+}
+.splide{
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.splide img{
+    height: 80px;
+    padding-left: 120px;
+}
+
+
+footer {
+  padding: 2rem 0;
+  background-color: #212529;
+}
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+  font-size: 20px;
+  line-height: 40px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #fff;
+  border-radius: 100%;
+  outline: 0;
+}
+
+footer .quick-links {
+  font-size: 90%;
+  line-height: 40px;
+  margin-bottom: 0;
+  text-transform: none;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.copyright {
+  color: white;
+}
+
+.fa-ellipsis-h {
+  color: white;
+  padding: 2rem 0;
+}
+
+
