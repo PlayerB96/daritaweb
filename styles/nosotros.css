@@ -116,33 +116,44 @@ body {
 /*-----Testimonial-------*/
 
 
+#portada{
+  background-image: url(https://images.pexels.com/photos/5256816/pexels-photo-5256816.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+	padding: 100px 100px;
+	text-align: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+#portada:before {
+content:'';
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: rgb(0,138,193);
+background: linear-gradient(37deg, rgba(0,138,193,0.6875700963979341) 20%, rgba(255,158,0,0.5699230375744048) 100%);}
+
+#portada p {
+font-size: 60px;
+color: #fff;
+position: relative;
+}
+#portada h3 {
+color: #fff;
+position: relative;
+}
+#portada h1 {
+  color: #fff;
+  position: relative;
+}
+
+
+
 /* ------testimonial  close-------*/
 
-.portada{
-  background: url(https://images.pexels.com/photos/35969/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat fixed center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100%;
-  width: 100% ;
-  text-align: center;
-
-}
-.text{
- margin: 30px 0px 30px 0px;	
- padding: 50px;
- display: inline-block;
-}
-.text h1{
-  font-family: 'El Messiri', sans-serif;
-  justify-content: center;
-  padding-top:15%;
-  width:80%;
-  margin:0 auto;
-  font-size:3rem;
-  color:white;
-}
 
 .services h1 {
   font-family: 'El Messiri', sans-serif;
@@ -300,3 +311,38 @@ h1 {
     transform:translateX(25%);
   }
 }
+
+#testmonial1{
+  background-image: url(https://images.pexels.com/photos/939328/pexels-photo-939328.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	padding: 100px 100px;
+	text-align: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+#testmonial1:before {
+content:'';
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: rgb(0,138,193);
+background: linear-gradient(37deg, rgba(0,138,193,0.6875700963979341) 20%, rgba(255,158,0,0.5699230375744048) 100%);}
+
+#testmonial1 p {
+font-size: 20px;
+color: #fff;
+position: relative;
+}
+#testmonial1 h3 {
+color: #fff;
+position: relative;
+}
+#testmonial1 h1 {
+  color: #fff;
+  position: relative;
+}
+

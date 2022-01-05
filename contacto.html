@@ -46,6 +46,9 @@ License: For each use you must have a valid license purchased only from above li
 
 		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=El+Messiri&family=Luxurious+Roman&family=Merienda+One&family=Montserrat:ital,wght@1,100&family=Righteous&family=Teko:wght@600&family=Yanone+Kaffeesatz:wght@200&display=swap');
+		</style>
 		
 	</head>
 	<body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled">
@@ -69,7 +72,7 @@ License: For each use you must have a valid license purchased only from above li
 					</div>
 					<!--end::Heaeder menu toggle-->
 					<a href="#">
-						<img alt="Logo" src="images/logo.png" class="h-40px h-lg-80px" style="padding-left:40px; padding-top:4px;" />
+						<img alt="Logo" src="images/logo.png" class="h-80px h-lg-80px" style="margin: 0 auto" />
 					</a>
 				</div>
 			</div>
@@ -205,39 +208,45 @@ License: For each use you must have a valid license purchased only from above li
 		<div style="padding-top:60px"></div>
 
 		<!-- Vision y Mision -->
-		<div class="box1"><h1>Contactanos</h1></div>
+		<div class="box1"><h1 style="font-family: 'El Messiri', sans-serif;" >Contactanos</h1></div>
 		<div class="col-10" style="justify-content: center; margin:0 auto; padding:30px">
 			<form id="kt_modal_new_target_form" class="form" action="#">
 				<!--begin::Heading-->
 				<div class="mb-13 text-center">
 					<!--begin::Title-->
-					<h1 class="mb-3">Queremos Conocerte</h1>
+					<h1 class="mb-3"></h1>
 					<!--end::Title-->
 					<!--begin::Description-->
-					<div class="text-muted fw-bold fs-5">If you need more info, please check
-					<a href="#" class="fw-bolder link-primary">Project Guidelines</a>.</div>
+					<div class="text-muted fw-bold fs-2">Desea recibir un presupuesto personalizado. Ingresa los datos en el formulario y un asesor se pondrá en contacto contigo a la brevedad.
+					</div>
 					<!--end::Description-->
 				</div>
 
-				<div class="d-flex flex-column mb-8 fv-row">
-					<input type="text" class="form-control form-control-solid border border-primary" placeholder="Nombre Completo" name="target_title" />
+				<div class="d-flex flex-column mb-8 fv-row form-floating mb-7">
+					<input type="text" class="form-control border border-primary" id="floatingInput" placeholder="Nombre Completo"/>
+					<label for="floatingInput" style="font-weight:100; font-family: 'El Messiri', sans-serif;">Nombre Completo*</label>
 				</div>
 
 				<div class="row g-9 mb-8">
 					<!--begin::Col-->
-					<div class="col-md-6 fv-row">
-					<input type="email" class="form-control form-control-solid border border-primary" placeholder="Correo Electronico" name="target_title" />
+					<div class="form-floating mb-7 col-md-6 fv-row ">
+						<input type="email" class="form-control border border-primary" id="floatingInput" placeholder="Correo Electronico"/>
+						<label for="floatingInput" style="padding-left:28px; font-weight:100; font-family: 'El Messiri', sans-serif;">Correo Electronico*</label>
 
 					</div>
-					<div class="col-md-6 fv-row">
-						<input type="phone" class="form-control form-control-solid border border-primary" placeholder="Telefono" name="target_title" />
+					<div class="form-floating mb-7 col-md-6 fv-row ">
+						<input type="phone" class="form-control border border-primary" id="floatingInput" placeholder="Telefono"/>
+						<label for="floatingInput" style="padding-left:28px; font-weight:100; font-family: 'El Messiri', sans-serif;">Telefono*</label>
+
 					</div>
 					
 				</div>
 				<!--end::Input group-->
 				<!--begin::Input group-->
-				<div class="d-flex flex-column mb-8">
-					<textarea class="form-control form-control-solid border border-primary	" rows="3" name="target_details" placeholder="Comentario"></textarea>
+				<div class="form-floating d-flex flex-column mb-8">
+					<textarea class="form-control border-primary" rows="3" name="target_details" id="floatingInput" placeholder="Comentario"></textarea>
+					<label for="floatingInput" style="padding-left:10px; font-weight:100; font-family: 'El Messiri', sans-serif;">Comentario</label>
+
 				</div>
 
 				<div class="text-center">
