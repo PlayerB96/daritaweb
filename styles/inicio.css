@@ -5,6 +5,7 @@ html,body{
     max-width: 100%;
     min-width: 100%;
     margin:auto 0;
+    
   }
 .portada{
     background: rgba(0,0,0,0.4) url(https://www.fullsmart.pe/wp-content/uploads/2021/12/Bg_Mobile.jpg) no-repeat fixed center ;
@@ -30,18 +31,28 @@ html,body{
 .portada h1 {
 	font-size: 60px;
 	color: #fff;
-	position: relative
+	position: relative;
 }
 .portada h2 {
   padding-top:10px;
   font-weight: 300;
 	color: #fff;
-	position: relative
+	position: relative;
 }
 .portada button {
-  padding-top:10px;
-	color: #fff;
-	position: relative
+
+  color: #fff;
+	position: relative;
+}
+
+.portada form {
+  padding:20px;
+  background: rgb(4,26,34);
+  background: linear-gradient(148deg, rgba(4,26,34,0.7940126734287465) 0%, rgba(43,41,38,0.5699230375744048) 100%);  border:2px solid red;
+  border-radius: 15px;
+	position: relative;
+
+  
 }
 
  .text{
@@ -53,7 +64,6 @@ html,body{
  .text h1{
     font-family: 'El Messiri', sans-serif;
     justify-content: center;
-    padding-top:15%;
     width:80%;
     margin:0 auto;
     font-size:3rem;
@@ -63,7 +73,7 @@ html,body{
 .services h1 {
     font-family: 'El Messiri', sans-serif;
     font-size: 36px;
-    padding-top: 28px;
+    padding-top: 60px;
     text-align: center;
     color: white;
 
@@ -206,3 +216,20 @@ h1 {
     transform:translateX(25%);
   }
 }
+
+/* SCROLL STYLE */
+.boxcss {
+
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+
+.boxcss:nth-of-type(even) {
+  transform: translateX(-600%);
+}
+
+.boxcss.show {
+  transform: translateX(0);
+}
+
+

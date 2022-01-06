@@ -118,7 +118,7 @@ body {
   
   #portada{
     background-image: url(https://images.pexels.com/photos/7362886/pexels-photo-7362886.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-      padding: 100px 100px;
+      padding: 100px 40px;
       text-align: center;
       background-position: center center;
       background-size: cover;
@@ -344,9 +344,15 @@ body {
     position: relative;
   }
 
+  .text{
+    padding:0; 
+    margin:0;    
+    text-align: center;
+    width: 100%;
+  }
   .text h1{
      font-family: 'El Messiri', sans-serif;
-     font-size:40px;
+     font-size:38px;
      color:white;
    }
  
@@ -363,9 +369,9 @@ body {
        border-color:  transparent  transparent #008ac1 #fff;
    }
 
-   section{padding: 90px 0px 0px 0px; color: #fff; }
+   section{padding: 10px 0px 0px 0px; color: #fff; }
    section .container{background: #008ac1;}
-   .thissection2{background: #008ac1;}
+   .thissection2{background: #008ac1; border:0px}
    section h1{padding:0; margin:0;}
    .thissection2 .bottom {
        height: 240px; /*this will work like some padding bottom missing  at section */
@@ -373,3 +379,25 @@ body {
        border-style: solid;
        border-color:  transparent  transparent #fff #008ac1;
    }
+
+   /* SCROLLING STYLE */
+  .boxcss {
+    margin:0 auto;
+    text-align: center;
+    padding-top: 20px;
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+  }
+  
+  .boxcss:nth-of-type(even) {
+    transform: translateX(-400%);
+  }
+  
+  .boxcss.show {
+    transform: translateX(0);
+  }
+  
+  .boxcss h2 {
+    font-size: 45px;
+  }
+  

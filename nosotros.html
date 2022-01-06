@@ -102,7 +102,7 @@ License: For each use you must have a valid license purchased only from above li
 							</span>
 							<div class="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown menu-rounded-0 py-lg-4 w-lg-225px">
 								<div class="menu-item">
-									<a class="menu-link py-3" href="#" title="Check out over 200 in-house components, plugins and ready for use solutions" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
+									<a class="menu-link py-3" href="servicio1.html" title="Check out over 200 in-house components, plugins and ready for use solutions" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
 										<span class="menu-icon">
 											<!--begin::Svg Icon | path: /icons/duotune/general/gen002.svg-->
 											<span class="svg-icon svg-icon-2">
@@ -132,7 +132,7 @@ License: For each use you must have a valid license purchased only from above li
 									</a>
 								</div>
 								<div class="menu-item">
-									<a class="menu-link py-3" href="#" title="Build your layout, preview and export HTML for server side integration" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
+									<a class="menu-link py-3" href="/servicio1.html" title="Check out the complete documentation" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss="click" data-bs-placement="right">
 										<span class="menu-icon">
 											<!--begin::Svg Icon | path: icons/duotune/general/gen019.svg-->
 											<span class="svg-icon svg-icon-2">
@@ -209,15 +209,24 @@ License: For each use you must have a valid license purchased only from above li
 		<br>
 		<br>
 		<br>
-		<h1 style="text-align:center; color:white; font-family: 'El Messiri', sans-serif;">Ofrecemos soluciones para mejorar el rendimiento de tu empresa</h1>
+		<h1 style="text-align:center; color:white; font-family: 'El Messiri', sans-serif; padding:0; margin-bottom:0">SOLUCIONES PARA MEJORAR EL RENDIMIENTO DE TU EMPRESA</h1>
 		<!-- Sobre Nosotros-->
+		<img class="rotateIn" src="https://images03.nicepage.com/a122014e1e8cdf24af08f98c/42a01cf1a5ed5435bd5c5625/bars12.png" class="img-responsive quote-image" style="width:220px; position:relative; top:50px; padding:0; margin:0 auto">
+		<div class="u-container-style u-layout-cell u-right-cell u-size-30 u-layout-cell-2">
+			<div class="u-container-layout u-container-layout-2">
+			  <div class="u-palette-3-base u-shape u-shape-circle u-shape-1"></div>
+			  <div alt="" class="u-image u-image-circle u-image-1"></div>
+			</div>
+		  </div>
 		<div id="content-2" class="card-body d-flex flex-column flex-lg-row flex-stack p-lg-15">
 			<!--begin::Illustration-->
+
 			<div>
 				<figure class="swing">
 					<h1 style="color:black; font-size:20px; padding:8px">QUIENES SOMOS?</h1>
 				</figure>
 			</div>  
+			
 			<!--end::Illustration-->
 			<!--begin::Info-->
 			<div class="d-flex flex-column justify-content-center align-items-center align-items-lg-start me-4 text-center text-lg-start">
@@ -254,15 +263,22 @@ License: For each use you must have a valid license purchased only from above li
 				<h3 class="fs-2hx line-height-lg mb-5 ">
 					<h1 style="color:white; font-size:30px;font-family: 'El Messiri', sans-serif;">Infraestructura de clase mundial</h1>
 				<p  style=" color:white; font-size:20px;font-family: 'El Messiri', sans-serif;"> Contamos con el personal adecuado en cada ciudad para atenderte de manera inmediata.</p>
-				
+
 				<h1 style="color:white; font-size:30px;font-family: 'El Messiri', sans-serif;">Infraestructura de clase mundial</h1>
 				<p  style=" color:white; font-size:20px;font-family: 'El Messiri', sans-serif;"> Contamos con el personal adecuado en cada ciudad para atenderte de manera inmediata.</p>
+				
+				<h3 class="fs-2hx line-height-lg mb-5 ">
+					<h1 style="color:white; font-size:30px;font-family: 'El Messiri', sans-serif;">Infraestructura de clase mundial</h1>
+				<p  style=" color:white; font-size:20px;font-family: 'El Messiri', sans-serif;"> Contamos con el personal adecuado en cada ciudad para atenderte de manera inmediata.</p>	
 					<br />
 				</h3>
 
 			</div>
-			
+			<div class="boxcss">
+			<img  src="	https://images03.nicepage.com/a122014e1e8cdf24af08f98c/c6a4f9513b875aba994ff889/bars2.png" class="img-responsive quote-image" style="width:220px; position:relative; top:100px; padding:0; margin:0 auto">
+			</div>
 		</div>
+
 
 		<!-- END por que escogernos -->
 
@@ -305,7 +321,7 @@ License: For each use you must have a valid license purchased only from above li
 			<!-- Carousel Start below -->
 			<div id="carousel1" class="carousel slide testimonial-style" data-ride="carousel">
 			  <!-- Indicators -->
-			  <ol class="carousel-indicators">
+			  <ol style="padding:10px" class="carousel-indicators">
 				<li data-target="#carousel1" data-slide-to="0" class="active"></li>
 				<li data-target="#carousel1" data-slide-to="1"></li>
 				<li data-target="#carousel1" data-slide-to="2"></li>
@@ -400,7 +416,26 @@ License: For each use you must have a valid license purchased only from above li
 		<!--end::Javascript-->
 		<script src = "https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"> </script>
 		<script>
+			const boxes = document.querySelectorAll(".boxcss");
 
+			window.addEventListener("scroll", checkBoxes);
+			
+			checkBoxes();
+			
+			function checkBoxes() {
+			  const triggerBottom = (window.innerHeight / 5) * 4;
+			
+			  boxes.forEach((box) => {
+				const boxTop = box.getBoundingClientRect().top;
+			
+				if (boxTop < triggerBottom) {
+				  box.classList.add("show");
+				} else {
+				  box.classList.remove("show");
+				}
+			  });
+			}
+			
 		</script>
 	</body>
 
