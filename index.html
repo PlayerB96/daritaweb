@@ -175,24 +175,24 @@
 				<h2 style="color:white"> Un lugar donde tu mascota será tratada como en casa.  <br>
 					Sé parte de esta gran familia.</h2>
 
-				<div style="heigh:300px; justify-content: center; margin:20px auto; ">		
-					<form id="kt_modal_new_target_form" class="form" action="#">
+				<div style="height:300px; justify-content: center; margin:20px auto; ">		
+					<form id="do_contact_form" method="POST" class="form" >
 						<!--begin::Heading-->
 						<h2>Déjanos tus datos y te llamaremos</h2>
 						<div class="d-flex flex-column mb-8 fv-row form-floating mb-7">
-							<input name="nombreCliente" style="border-radius:0" type="text" class="form-control" id="floatingInput" placeholder="Nombre Completo"/>
+							<input name="nombre" style="border-radius:0" type="text" class="form-control" id="nombre" placeholder="Nombre Completo"/>
 							<label for="floatingInput" style="font-weight:100; font-family: 'El Messiri', sans-serif;">Nombre Completo*</label>
 						</div>
 		
 						<div class="row mb-6">
 							<!--begin::Col-->
 							<div class="form-floating mb-7 col-md-6 fv-row ">
-								<input name"emailCliente" style="border-radius:0" type="email" class="form-control" id="floatingInput" placeholder="Correo Electronico"/>
+								<input name="email" style="border-radius:0" type="email" class="form-control" id="email" placeholder="Correo Electronico"/>
 								<label for="floatingInput" style="padding-left:28px; font-weight:100; font-family: 'El Messiri', sans-serif;">Correo Electronico*</label>
 		
 							</div>
 							<div class="form-floating  col-md-6 fv-row ">
-								<input name="msjCliente" style="border-radius:0" type="phone" class="form-control" id="floatingInput" placeholder="Telefono"/>
+								<input name="tel" style="border-radius:0" type="tel" class="form-control" id="tel" placeholder="Telefono"/>
 								<label for="floatingInput" style="padding-left:28px; font-weight:100; font-family: 'El Messiri', sans-serif;">Telefono*</label>
 		
 							</div>
@@ -203,11 +203,11 @@
 		
 						<div class="text-center">
 							<button type="reset" id="kt_modal_new_target_cancel" class="btn btn-light me-3">Cancel</button>
-							<button type="submit" id="kt_modal_new_target_submit" class="btn btn-danger">
-								<span class="indicator-label">Submit</span>
-								<span class="indicator-progress">Please wait...
-								<span class="spinner-baspinner-border-sm align-middle ms-2"></span></span>
+							<button style="margin:0px;" name="submit" type="submit"  id="btn-submit" value="Enviar" class="btn btn-danger submit_button">
+								Enviar
 							</button>
+							<div style="margin-top:10px; color:white;" class="wrapper_msg "></div>
+
 						</div>
 						<!--end::Actions-->
 					</form>
@@ -532,6 +532,11 @@
 		<script src="metronic/dist/assets/js/custom/modals/upgrade-plan.js"></script>
 		<script src="metronic/dist/assets/js/custom/modals/create-app.js"></script>
 		<script src="metronic/dist/assets/js/custom/modals/users-search.js"></script>
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+		<script src = "contacto2.js"> </script>
+
 		<!--end::Page Custom Javascript-->
 		<!--end::Javascript-->
 		<script src = "https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"> </script>
